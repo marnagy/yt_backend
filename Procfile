@@ -1,1 +1,1 @@
-web: gunicorn yt_backend:app
+web: gunicorn app:app
