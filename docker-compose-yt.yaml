@@ -1,0 +1,12 @@
+services:
+  yt-backend:
+    build:
+      context: app
+      dockerfile: Dockerfile
+      target: dev
+    ports:
+      - 9200:8000
+      - 9201:8001
+    volumes:
+      - ./app:/app
+    command: /bin/sh -c "while sleep 1000; do :; done"
